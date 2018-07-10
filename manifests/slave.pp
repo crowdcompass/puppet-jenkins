@@ -248,7 +248,7 @@ class jenkins::slave (
       }
     }
     'Darwin': {
-      $service_name     = 'org.jenkins-ci.slave.jnlp'
+      $service_name     = 'org.jenkins-ci.slave.jnlp',
       $defaults_user    = $slave_user,
       $defaults_group   = $slave_user,
       $manage_user_home = false
